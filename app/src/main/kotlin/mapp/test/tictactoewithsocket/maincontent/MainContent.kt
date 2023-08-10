@@ -10,7 +10,6 @@ import mapp.test.tictactoewithsocket.ui.theme.TicTacToeWithSocketTheme
 @Composable
 fun MainContent() {
     TicTacToeWithSocketTheme {
-        // A surface container using the 'background' color from the theme
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         }
     }
