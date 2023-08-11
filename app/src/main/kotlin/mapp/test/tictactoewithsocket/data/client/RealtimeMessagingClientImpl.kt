@@ -30,7 +30,7 @@ class RealtimeMessagingClientImpl @Inject constructor(
     override fun getGameStateStream(): Flow<GameState> {
         return flow {
             session = client.webSocketSession {
-                url("ws://10.200.1.206:8080/play")
+                url("ws://10.10.245.89:8080/play")
             }
 
             val gameStates = session!!
