@@ -83,7 +83,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling:1.2.0")
     debugImplementation("androidx.compose.ui:ui-test-manifest:1.2.0")
 
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+
     implementation("com.google.dagger:hilt-android:2.42")
     kapt("com.google.dagger:hilt-android-compiler:2.42")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
@@ -91,10 +93,10 @@ dependencies {
 
     // Ktor
     val ktorVersion = "1.6.3"
-    val serializableVersion = "1.3.0"
+    val serialization = "1.3.0"
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-cio:$ktorVersion")
     implementation("io.ktor:ktor-client-websockets:$ktorVersion")
     implementation("io.ktor:ktor-client-logging:$ktorVersion")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializableVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization")
 }
